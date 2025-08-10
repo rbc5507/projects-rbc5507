@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fff8f0;
+  color: #333;
+  line-height: 1.6;
+  padding: 0 1rem;
+}
+
+header {
+  background-color: rebeccapurple;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+main {
+  max-width: 960px;
+  margin: 2rem auto;
+}
+
+/* Section titles */
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #d84315;
+  border-bottom: 2px solid #ff7043;
+  padding-bottom: 0.3rem;
+}
+
+/* Address and directions */
+#directions p {
+  margin-bottom: 1rem;
+}
+
+#directions img,
+#map img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border: 2px solid #ccc;
+}
+
+/* Menu section */
+#menu {
+  margin-top: 2rem;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-left: 6px solid #ff7043;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  border-radius: 6px;
+}
+
+.menu-item img {
+  width: 120px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 1rem;
+  border-radius: 4px;
+}
+
+.menu-item p {
+  font-size: 1.1rem;
+}
+
+/* Footer styles */
+footer {
+  background-color: rebeccapurple;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+  font-size: 0.95rem;
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
+}
+

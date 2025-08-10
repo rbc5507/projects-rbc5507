@@ -1,0 +1,134 @@
+:root {
+  --bg: #0f172a;
+  --panel: #111827;
+  --card: #0b1220;
+  --acc: #60a5fa;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(120deg, var(--bg), #020617);
+  color: var(--text);
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica,
+    Arial, sans-serif;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(17, 24, 39, 0.75);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid #1f2937;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.brand {
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  border-radius: 999px;
+  border: 1px solid #334155;
+}
+.btn:hover {
+  border-color: var(--acc);
+  box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.2);
+}
+.hero {
+  display: grid;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+.hero h1 {
+  font-size: 2rem;
+  margin: 0.2rem 0;
+}
+.hero p {
+  color: var(--muted);
+  max-width: 65ch;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.card {
+  background: linear-gradient(180deg, var(--card), #0a0f1a);
+  border: 1px solid #1e293b;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-bottom: 1px solid #1e293b;
+}
+.card .body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.card h3 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+.card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+.card .actions {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.footer {
+  color: var(--muted);
+  text-align: center;
+  margin: 3rem 0 1rem;
+}
+.back {
+  margin: 1rem 0;
+  display: inline-block;
+}
+.content {
+  max-width: 780px;
+}
+code,
+kbd {
+  background: #0b1220;
+  border: 1px solid #1e293b;
+  border-radius: 0.5rem;
+  padding: 0.15rem 0.4rem;
+}
+@media (min-width: 900px) {
+  .hero {
+    grid-template-columns: 1.2fr 1fr;
+    align-items: center;
+  }
+}

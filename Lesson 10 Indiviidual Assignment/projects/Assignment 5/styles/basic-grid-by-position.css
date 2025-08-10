@@ -1,0 +1,24 @@
+body {
+    margin: auto;
+    max-width: 1024px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: grid;
+  /*grid-template-columns: 200px 200px 200px;*/
+  /*grid-template-columns: 30% 30% 30%;*/
+  /*grid-template-columns: 2fr 1fr 1fr;*/
+  /*grid-template-columns: repeat(3, 1fr);*/
+  grid-template-columns: repeat(auto-fit, minmax);
+  gap:10px ;
+  /*grid-auto-rows: 80px;*/
+  grid-auto-rows: minmax(80px, auto);
+}
+
+.container > div {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(207, 232, 220);
+    border:2px solid rgb(79, 185, 227)
+}
